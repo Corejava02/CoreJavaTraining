@@ -1,3 +1,5 @@
+
+package Subham;
 public class EvenOrOdd {
     public static void main(String[]args) {
         int number = 1000;
