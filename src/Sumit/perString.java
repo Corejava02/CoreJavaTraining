@@ -1,3 +1,4 @@
+package Sumit;
 import java.util.Scanner;
 
 public class perString {
