@@ -10,14 +10,12 @@ public class cross {
                 
                     {      
                         if(j==i || j==k-i+1)
-                        {    System.out.print("*");}
-                            System.out.print(" ");
-                                 
-		 
-                    	
+                        {    
+                            System.out.print("*");
+                        }
+                            System.out.print(" ");	
                     }
 		        System.out.println();
-	    
             }   
     }
 }
