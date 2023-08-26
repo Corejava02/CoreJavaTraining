@@ -1,8 +1,9 @@
-package Sumit;
+package Sumit.ARRAY;
 
 import java.util.Scanner;
 
-public class DoubleArraySpiral {
+public class DoubleArraySpiralAntiClock {
+    
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter row limit:");
@@ -10,6 +11,7 @@ public class DoubleArraySpiral {
         System.out.println("Enter column limit:");
         int c=sc.nextInt();
         int arr[][]=new int[r][c];
+        int top=0,right=c,left=0,down=r;
         System.out.println("Enter array elements:");
         for(int i=0;i<r;i++)
         {
@@ -28,25 +30,28 @@ public class DoubleArraySpiral {
             System.out.println();
         }
         System.out.println("Clockwise Spiral Matrix:");
-        int r1=0,c1=0;
-       while(r1<r && c1<c)
-       {
-        for(int i=c1;i<c;i++)
+        while(left<=right&&top<=down)
         {
-            System.out.println(arr[r1][i]+" ");
+            for(int i=left;i<right;i++)
+            {
+                System.out.println(arr[top][i]);
+            }
+            top++;
+            for(int i=top;i<down;i++)
+            {
+                System.out.println(arr[i][right-1]);
+            }
+            right--;
+            for(int j=right-1;j>left;j--)
+            {
+                System.out.println(arr[down-1][j]);
+            }
+            down--;
+            for(int j=down-1;j>top;j--)
+            {
+                System.out.println(arr[j][left]);
+            }
+            left++;
         }
-        r1++;
-        for(int i=c1;i<r;i++)
-        {
-            System.out.println(arr[i][c-1]+" ");
-        }
-        c--;
-        for(int i=c1;i>=0;i--)
-        {
-            System.out.println(arr[r2][i]);
-        }
-        r2--;
-        for(int i=r1;i<)
-       }
     }
 }
