@@ -8,25 +8,20 @@ public class ArrrayPalin {
         System.out.println("Enter max limit:");
         int n=sc.nextInt();
         int arr[]=new int[n];
-        int a[]=new int[n];
+        int t=0;
         System.out.println("Enter array elements:");
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
         }
-        int j=0,t=0;
-        for(int i=n-1;i>=0;i--)
+        for(int i=0;i<=n/2;i++)
         {
-            a[j]=arr[i];
-            j++;
-        }
-        for(int i=0;i<n;i++)
-        {
-            if(arr[i]==a[i]){
-                t=t+1;
+            if(arr[i]!=arr[n-i-1]){
+                t=1;
+                break;
             }
         }
-        if(t==n)
+        if(t!=1)
         {
             System.out.println("Array is palindromic");
         }
