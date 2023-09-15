@@ -1,13 +1,14 @@
 package Sumit.DSA.Collections;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
  * ArrayListSimple
  */
 public class ArrayListSimple {
-    ArrayList<Integer>list=new ArrayList<>();
+    List<Integer>list=new ArrayList<>();
     int add() {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the integer:");
@@ -36,27 +37,42 @@ public class ArrayListSimple {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number whose occurences is to be counted:");
         int num=sc.nextInt();
-        if(list.contains(num)
+        int c=0;
+        if(list.contains(num))
         {
-            
+            for(Integer item:list)
+            {
+                if(item==num)
+                {
+                    c=c+1;
+                }
+            }
+            System.out.println("The no.of occurence of "+num+" is "+c);
         }
+        else{
+            System.out.println("Item not present.");
+        }
+    }
+    void StringList()
+    {
+         List<String> stringList = new ArrayList<>();
+         for (Integer item :list) {
+            stringList.add(Integer.toString(item));
+        }
+        System.out.println(stringList);
     }
     void displayList() {
         System.out.println("The list:");
         for (Integer j : list) {
             System.out.println(j);}
-        ArrayList<Integer> shallowcopy=new ArrayList<>(list);
-        System.out.println("The shallowcopy:");
-        for (Integer j1 : shallowcopy) {
-            System.out.println(j1);
-        }
+        
     }
     public static void main(String[] args) {
       ArrayListSimple ob = new ArrayListSimple();
         Scanner obj = new Scanner(System.in);
         int i = 0;
         while (i != 1) {
-            System.out.println("Enter 1 to add number, 2 to remove number, 3 to display list,4 to clear all numbers in the list, 5 to convert list to array and 8 to exit...");
+            System.out.println("Enter 1 to add number, 2 to find sum, 3 to find product,4 to count the no of occurence of a number in the list, 5 to convert to stringlist ,6 to display list and 7 to exit...");
             int ch = obj.nextInt();
             switch (ch) {
                 case 1:
@@ -69,13 +85,12 @@ public class ArrayListSimple {
                 ob.MulOfAll();
                 break;
                 case 4:
-                
+                ob.count();
                 break;
                 case 5:
-                
+                ob.StringList();
                 break;
                 case 6:
-                case 7:
                 if(ob.list.isEmpty())
                 {
                     System.out.println("List is Empty.");

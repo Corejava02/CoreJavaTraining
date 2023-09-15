@@ -4,7 +4,7 @@ package Sumit.DSA.Collections;
 import java.util.*;
 
 public class ArrayListBasic {
-    ArrayList<Integer> list = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
     
 
     int add() {
@@ -36,7 +36,7 @@ public class ArrayListBasic {
         System.out.println("The list:");
         for (Integer j : list) {
             System.out.println(j);}
-        ArrayList<Integer> shallowcopy=new ArrayList<>(list);//or we can use list.clone()
+        List<Integer> shallowcopy=new ArrayList<>(list);//or we can use list.clone()
         System.out.println("The shallowcopy:");
         for (Integer j1 : shallowcopy) {
             System.out.println(j1);
