@@ -24,6 +24,7 @@ public class ArrayListBasic {
     {
         list.clear();
     }
+    
     void Arrayto()
     {
         Object a[]=list.toArray();
