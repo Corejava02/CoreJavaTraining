@@ -1,0 +1,226 @@
+.Heading{
+  background-color: #030303;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:sticky;
+    padding-block: 10px;
+    
+  }
+main{
+    background-image: url("https://img.freepik.com/premium-photo/contemporary-spotless-fitness-gym-center-interiorgenerative-ai_391052-10889.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+  font-family: Audiowide;
+  color: aliceblue;
+}
+h1:hover {
+  color: rgba(109, 109, 109, 0.993);
+  background-color: rgba(255, 255, 255, 0);
+  }
+h2{
+  background-color: rgba(169, 169, 169, 0.212);
+  font-family: Tektur;
+  color: aliceblue;
+  border: 3px solid #b3b2b2;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+h2:hover {
+  color: rgba(250, 92, 1, 0.993);
+  background-color: rgba(255, 255, 255, 0);
+}
+p{
+  font-size: large;
+}
+p:hover{
+  color: rgba(255, 238, 0, 0.993);
+  background-color: rgba(255, 255, 255, 0);
+}
+.home{
+    background-color: #3d3d3da6;
+    color: rgba(250, 192, 1, 0.788);
+    top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 10px;
+  font-family: Permanent Marker;
+}
+.navbar {
+  background-color: #000000;
+  font-family: Permanent Marker;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.nav-list li a:hover:not(.log) {
+  color: rgba(255, 238, 0, 0.993);
+  background-color: rgba(53, 52, 52, 0.5);
+  }
+  a:hover:not(.log) {
+    color: rgba(255, 238, 0, 0.993);
+    background-color: rgba(53, 52, 52, 0.5);
+    }
+
+.nav-list li {
+  float: left;
+}
+
+.log{
+  padding: none;
+  background-color: rgba(255, 127, 80, 0.842);
+  color: #fff;
+  font-weight: bold;
+  font-family: changa;
+  font-size: large;
+  text-decoration: none;
+}
+.log:hover{
+  color: rgba(255, 127, 80, 0.842);
+  background-color: rgba(99, 98, 98, 0.5);
+}
+.nav-list li a {
+  margin: 10px;
+  border: 5px black;
+  border-radius: 12px;
+  padding: 5px;
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #020202;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #706e6e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.services{
+    background-color: #3d3d3da6;
+    color: rgba(250, 192, 1, 0.788);
+    top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 10px;
+  font-family: Permanent Marker;
+}
+.about{
+    background-color: #3d3d3da6;
+    color: rgba(250, 192, 1, 0.788);
+    top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 10px;
+  font-family: Permanent Marker;
+}
+.follow{
+    background-color: #3d3d3da6;
+    color: rgba(250, 192, 1, 0.788);
+    top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 10px;
+  font-family: Permanent Marker;
+}
+#links{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 50%;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  .fa-instagram {
+    background: #c62cb1;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.facebook{
+  color: rgb(207, 207, 207);
+  align-self: center;
+}
+.facebook:hover {
+  color: rgba(146, 146, 146, 0.993);
+  background-color: rgba(255, 255, 255, 0);
+}
+footer{
+    background-color: #030303;
+    color: aliceblue;
+    top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 10px;
+}
+#foot{
+    font-weight: lighter;
+}
+h3{
+    font-family: Special Elite;
+}
+h3:hover {
+    color: rgba(255, 238, 0, 0.993);
+    background-color: rgba(255, 255, 255, 0);
+}
+#head4{
+  font-family: Tektur;
+  font-size: x-large;
+  color: rgb(252, 76, 0);
+}
+#head4:hover{
+  color: rgba(255, 128, 0, 0.993);
+}
+
+
+
